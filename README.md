@@ -8,7 +8,8 @@ This Repository is home to a Genric Smyfony Docker Container to help Devlopment
 Installation:
   ```
   git submodule add https://github.com/stiftungswo/generic-docker-symfony-dev-container.git env
-  ./env/build.sh
+  cd env
+  ./build.sh
   ```
   
   Add the Following to AppKernel.php
@@ -40,9 +41,11 @@ Installation:
 
 Usage
   ```
-  ./env/run.sh #Starts the Conatainer with the Symfony Main Directory Mounted
+  cd env
+  ./run.sh #Starts the Conatainer with the Symfony Main Directory Mounted
   ```
   
   ```
-  ./env/stop.sh #Stops the Container whos id is under app/cache/docker.cid
+  cd env
+  ./stop.sh #Stops the Container whos id is under app/cache/docker.cid
   ```
